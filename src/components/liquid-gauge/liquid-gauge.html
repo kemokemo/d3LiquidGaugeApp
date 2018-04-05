@@ -1,2 +1,27 @@
-<b>Default Parameters</b>
-<app-ngx-d3-liquid-fill-gauge></app-ngx-d3-liquid-fill-gauge>
+<div>
+    <h2>{{name}}</h2>
+    <app-ngx-d3-liquid-fill-gauge 
+    [value]="value"
+    [minValue]="0" 
+    [maxValue]="100" 
+    [circleThickness]="0.05" 
+    [circleFillGap]="0.05"
+    [circleColor]="'#178BCA'" 
+    [waveHeight]="0.05" 
+    [waveCount]="2" 
+    [waveRiseTime]="1000" 
+    [waveAnimateTime]="1000" 
+    [waveRise]="true"
+    [waveHeightScaling]="true" 
+    [waveAnimate]="true" 
+    [waveColor]="'#178BCA'" 
+    [waveOffset]="0" 
+    [textVertPosition]=".5" 
+    [textSize]="1"
+    [valueCountUp]="true" 
+    [displayPercent]="true" 
+    [textColor]="'#045681'" 
+    [waveTextColor]="'#A4DBf8'">
+    </app-ngx-d3-liquid-fill-gauge>
+    <br>
+</div>

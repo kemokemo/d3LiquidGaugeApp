@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 /**
  * Generated class for the LiquidGaugeComponent component.
@@ -12,11 +12,16 @@ import { Component } from '@angular/core';
 })
 export class LiquidGaugeComponent {
 
-  text: string;
+  @Input('name') name;
+  @Input('value') value;
 
   constructor() {
     console.log('Hello LiquidGaugeComponent Component');
-    this.text = 'Hello World';
+  }
+
+  ngAfterViewInit(){
+    console.log('name: ', this.name);
+    console.log('value: ', this.value);
   }
 
 }
