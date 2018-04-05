@@ -5,14 +5,16 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
-import { LiquidGaugeComponent } from '../components/liquid-gauge/liquid-gauge';
 import { HomePage } from '../pages/home/home';
+import { NgxD3LiquidFillGaugeComponent } from '../components/ngx-d3-liquid-fill-gauge/ngx-d3-liquid-fill-gauge.component';
+import { LiquidGaugeComponent } from '../components/liquid-gauge/liquid-gauge';
 
 @NgModule({
   declarations: [
     MyApp,
-    LiquidGaugeComponent,
-    HomePage
+    HomePage,
+    NgxD3LiquidFillGaugeComponent,
+    LiquidGaugeComponent
   ],
   imports: [
     BrowserModule,
