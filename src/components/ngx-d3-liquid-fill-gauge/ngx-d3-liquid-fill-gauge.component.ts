@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, Input, ViewEncapsulation, AfterViewInit, OnChanges, SimpleChanges } from '@angular/core';
+import { Component, OnInit, ViewChild, Input, OnChanges, SimpleChanges } from '@angular/core';
 import * as d3 from 'd3';
 import * as liquid from './liquidFillGauge';
 
